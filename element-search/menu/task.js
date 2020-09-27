@@ -1,10 +1,7 @@
 let menuLink = Array.from(document.getElementsByClassName('menu__link'));
 let menuSub = Array.from(document.getElementsByClassName('menu_sub'));
 
-
-for (let i = 0; i < menuLink.length; i++) {
-
-    let link = menuLink[i];
+for (let link of menuLink) {
 
     link.onclick = function () {
 
@@ -13,7 +10,7 @@ for (let i = 0; i < menuLink.length; i++) {
         } 
 
         // else {
-        //     menuSub[i].querySelectorAll('.menu_active').classList.remove('menu_active');
+        //     menuSub.querySelectorAll('.menu_active').classList.remove('menu_active');
         // }
 
 
